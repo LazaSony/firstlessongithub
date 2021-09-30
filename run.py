@@ -1,6 +1,6 @@
 from dash_webpage.test import my_print 
 my_print()
-
+print("hello")
 import dash_webpage as test_file 
 test_file.test.my_print()
 
