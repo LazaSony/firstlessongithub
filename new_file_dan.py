@@ -1,3 +1,0 @@
-print("hello")aaaa
-
-aaaaasssss
