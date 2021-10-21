@@ -1,12 +1,12 @@
-from dash_webpage.test import my_print 
-my_print()
-print("hello")
-import dash_webpage as test_file 
-test_file.test.my_print()
+from config import PRODUCTION
+from app import app
+from static.layout import layout
 
-import dash_webpage.test as test_file2
-test_file2.my_print()
+app.layout = layout
 
-# folder that does not have __init__.py
-import dash_webpage_2.test as test_file3
-test_file3.my_print()
+if __name__ == "__main__":
+
+    if PRODUCTION:
+        app.run_server(debug=False,  port = 8053)
+    else:
+        app.run_server(debug=True, use_reloader=True,  port = 8053)
