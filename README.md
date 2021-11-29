@@ -148,5 +148,5 @@ This will remove all folders and their content with names `.env` and `__pycache_
 It will remove `credentials1.py` file in the root directory and `credentials2` in the `models` directory - but will keep everything else in there.
 
 
-Reviewer: please remove this line of code before merging the pull request.
+
 
